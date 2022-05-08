@@ -1,0 +1,249 @@
+<head>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/form.css' %}">
+
+</head>
+<body>
+
+<div class="contactez-nous">
+<h1>Etes vous en bonne relation ?</h1>
+<p> !</p>
+<form action="{% url 'divorcetest3'%}" method="post">
+  {% csrf_token %}
+  <div>
+    <label class="lab" for="fav_food">Connaissez-vous la nourriture préférée de ton conjoint. ?</label>
+    <div class="test"> 
+    <input type="radio" value=4 for="fav_food" name="fav_food" required >
+      <label class="form-control-label" id="no" name="fav_food" >Jamais</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=3 for="fav_food" name="fav_food" required >
+      <label class="form-control-label" id="sm" name="fav_food">rarement</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=2 for="fav_food" name="fav_food" required >
+      <label class="form-control-label" id="sm" name="fav_food">Parfois</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=1 for="fav_food" name="fav_food" required >
+      <label class="form-control-label" id="caec" name="fav_food" >Frequament</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=0 for="fav_food" name="fav_food"  required>
+      <label class="form-control-label" id="caec" name="fav_food" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+    <label class="lab" for="harmony">Pensez-vous que vous êtes en harmonie?</label>
+    <div class="test"> 
+      <input type="radio" value=4 for="fav_food" name="harmony" required >
+        <label class="form-control-label" id="no" name="harmony" >Jamais</label><br>
+        </div>
+        <div class="test"> 
+        <input type="radio" value=3 for="fav_food" name="harmony" required >
+       <label class="form-control-label" id="sm" name="fav_food">rarement</label><br>
+       </div>
+       <div class="test"> 
+        <input type="radio" value=2 for="fav_food" name="harmony" required >
+        <label class="form-control-label" id="sm" name="harmony">Parfois</label><br>
+        </div>
+        <div class="test"> 
+        <input type="radio" value=1 for="fav_food" name="harmony" required >
+        <label class="form-control-label" id="caec" name="harmony" >Frequament</label><br>
+        </div>
+        <div class="test"> 
+        <input type="radio" value=0 for="fav_food" name="harmony"  required>
+        <label class="form-control-label" id="caec" name="harmony" >Toujours</label><br>
+        </div>
+  </div>
+  <div>
+    <label class="lab" for="love">Es-tu encors amoureuse de lui/d'elle ?</label>
+    <div class="test"> 
+    <input type="radio" value=4 for="fav_food" name="love" required >
+      <label class="form-control-label" id="no" name="love" >Jamais</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=3 for="fav_food" name="love" required >
+      <label class="form-control-label" id="sm" name="love">rarement</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=2 for="fav_food" name="love" required >
+      <label class="form-control-label" id="sm" name="love">Parfois</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=1 for="fav_food" name="love" required >
+      <label class="form-control-label" id="caec" name="love" >Frequament</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=0 for="fav_food" name="love"  required>
+      <label class="form-control-label" id="caec" name="love" >Toujours</label><br>
+      </div>
+</div>
+<div>
+  <label class="lab" for="dreams">Partagez-vous les mêmes rêves ?</label>
+  <div class="test"> 
+  <input type="radio" value=4 for="dreams" name="dreams" required >
+    <label class="form-control-label" id="no" name="dreams" >Jamais</label><br>
+    </div>
+    <div class="test"> 
+    <input type="radio" value=3 for="dreams" name="dreams" required >
+    <label class="form-control-label" id="sm" name="dreams">rarement</label><br>
+    </div>
+    <div class="test"> 
+    <input type="radio" value=2 for="dreams" name="dreams" required >
+    <label class="form-control-label" id="sm" name="dreams">Parfois</label><br>
+    </div>
+    <div class="test"> 
+    <input type="radio" value=1 for="dreams" name="dreams" required >
+    <label class="form-control-label" id="caec" name="dreams" >Frequament</label><br>
+    </div>
+    <div class="test"> 
+    <input type="radio" value=0 for="dreams" name="dreams"  required>
+    <label class="form-control-label" id="caec" name="dreams" >Toujours</label><br>
+    </div>
+</div>
+<div>
+<label class="lab" for="happy">Êtes-vous heureux(se) avec lui/elle ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="conta" name="happy" required >
+  <label class="form-control-label" id="no" name="happy" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=3 for="happy" name="happy" required >
+  <label class="form-control-label" id="sm" name="happy">rarement</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=2 for="happy" name="happy" required >
+  <label class="form-control-label" id="sm" name="chappy">Parfois</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=1 for="happy" name="happy" required >
+  <label class="form-control-label" id="caec" name="happy" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="happy" name="happy"  required>
+  <label class="form-control-label" id="caec" name="happy" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="trust">Avez-vous confiance en votre conjoint?</label>
+<div class="test"> 
+<input type="radio" value=4 for="trust" name="trust" required >
+  <label class="form-control-label" id="no" name="trust" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=3 for="trust" name="trust" required >
+  <label class="form-control-label" id="sm" name="trust">rarement</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=2 for="trust" name="trust" required >
+  <label class="form-control-label" id="sm" name="trust">Parfois</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=1 for="trust" name="trust" required >
+  <label class="form-control-label" id="caec" name="trust" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="trust" name="trust"  required>
+  <label class="form-control-label" id="caec" name="trust" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="likes">Aimez-vous les mêmes choses ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="likes" name="likes" required >
+  <label class="form-control-label" id="no" name="likes" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=3 for="likes" name="likes" required >
+  <label class="form-control-label" id="sm" name="likes">rarement</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=2 for="likes" name="likes" required >
+  <label class="form-control-label" id="sm" name="likes">Parfois</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=1 for="likes" name="likes" required >
+  <label class="form-control-label" id="caec" name="likes" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="likes" name="likes"  required>
+  <label class="form-control-label" id="caec" name="likes" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="hope_wishes">Partagez-vous vos souhaits avec lui/elle ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="hope_wishes" name="hope_wishes" required >
+  <label class="form-control-label" id="no" name="hope_wishes" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=3 for="hope_wishes" name="hope_wishes" required >
+  <label class="form-control-label" id="sm" name="hope_wishes">rarement</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=2 for="hope_wishes" name="hope_wishes" required >
+  <label class="form-control-label" id="sm" name="hope_wishes">Parfois</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=1 for="hope_wishes" name="hope_wishes" required >
+  <label class="form-control-label" id="caec" name="hope_wishes" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="hope_wishes" name="hope_wishes"  required>
+  <label class="form-control-label" id="caec" name="hope_wishes" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="freomvalue">Partagez-vous les mêmes valeurs ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="freomvalue" name="freomvalue" required >
+  <label class="form-control-label" id="no" name="freomvalue" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=3 for="freomvalue" name="freomvalue" required >
+  <label class="form-control-label" id="sm" name="freomvalue">rarement</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=2 for="freomvalue" name="freomvalue" required >
+  <label class="form-control-label" id="sm" name="freomvalue">Parfois</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=1 for="freomvalue" name="freomvalue" required >
+  <label class="form-control-label" id="caec" name="freomvalue" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="freomvalue" name="freomvalue"  required>
+  <label class="form-control-label" id="caec" name="freomvalue" >Toujours</label><br>
+  </div>
+</div>
+<div>
+    <label class="lab" for="commongoal">Avez-vous des objectifs communs ?</label>
+    <div class="test"> 
+    <input type="radio" value=4 for="commongoal" name="commongoal" required >
+      <label class="form-control-label" id="no" name="commongoal" >Jamais</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=3 for="commongoal" name="commongoal" required >
+      <label class="form-control-label" id="sm" name="commongoal">rarement</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=2 for="commongoal" name="commongoal" required >
+      <label class="form-control-label" id="sm" name="commongoal">Parfois</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=1 for="commongoal" name="commongoal" required >
+      <label class="form-control-label" id="caec" name="commongoal" >Frequament</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=0 for="commongoal" name="commongoal"  required>
+      <label class="form-control-label" id="caec" name="commongoal" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+    <button type="submit">Passer au niveau 4</button>
+  </div>
+</form>
+</div>
+
+</body>

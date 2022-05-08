@@ -1,0 +1,272 @@
+<head>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/form.css' %}">
+
+</head>
+<body>
+
+<div class="contactez-nous">
+<h1>Etes vous en bonne relation ?</h1>
+<p> !</p>
+<form action="{% url 'divorcetest5'%}" method="post">
+  {% csrf_token %}
+  <div>
+    <label class="lab" for="notcalm">Vos disccussions  avec ton conjoint n'est pas calme ?</label>
+  <div class="test"> 
+    <input type="radio" value=4 for="notcalm" name="notcalm" required >
+      <label class="form-control-label" id="no" name="notcalm" >Jamais</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=3 for="notcalm" name="notcalm" required >
+      <label class="form-control-label" id="sm" name="notcalm">rarement</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=2 for="notcalm" name="notcalm" required >
+      <label class="form-control-label" id="sm" name="notcalm">Parfois</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=1 for="notcalm" name="notcalm" required >
+      <label class="form-control-label" id="caec" name="notcalm" >Frequament</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=0 for="notcalm" name="notcalm"  required>
+      <label class="form-control-label" id="caec" name="notcalm" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+    <label class="lab" for="agro_argue">Vous disputez-vous aggressivement avec lui/elle</label>
+  <div class="test"> 
+      <input type="radio" value=4 for="notcalm" name="agro_argue" required >
+        <label class="form-control-label" id="no" name="agro_argue" >Jamais</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=3 for="notcalm" name="agro_argue" required >
+       <label class="form-control-label" id="sm" name="notcalm">rarement</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=2 for="notcalm" name="agro_argue" required >
+        <label class="form-control-label" id="sm" name="agro_argue">Parfois</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=1 for="notcalm" name="agro_argue" required >
+        <label class="form-control-label" id="caec" name="agro_argue" >Frequament</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=0 for="notcalm" name="agro_argue"  required>
+        <label class="form-control-label" id="caec" name="agro_argue" >Toujours</label><br>
+        </div>
+  </div>
+  <div>
+    <label class="lab" for="silent_for_calm">Restez-vous silencieux pour le calme?</label>
+  <div class="test"> 
+    <input type="radio" value=4 for="notcalm" name="silent_for_calm" required >
+      <label class="form-control-label" id="no" name="silent_for_calm" >Jamais</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=3 for="notcalm" name="silent_for_calm" required >
+      <label class="form-control-label" id="sm" name="silent_for_calm">rarement</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=2 for="notcalm" name="silent_for_calm" required >
+      <label class="form-control-label" id="sm" name="silent_for_calm">Parfois</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=1 for="notcalm" name="silent_for_calm" required >
+      <label class="form-control-label" id="caec" name="silent_for_calm" >Frequament</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=0 for="notcalm" name="silent_for_calm"  required>
+      <label class="form-control-label" id="caec" name="silent_for_calm" >Toujours</label><br>
+      </div>
+</div>
+<div>
+  <label class="lab" for="silence_instead_argue">Vous sentez-vous mieux lorsque vous vous taisez que lorsque vous vous disputez ?</label>
+<div class="test"> 
+  <input type="radio" value=4 for="silence_instead_argue" name="silence_instead_argue" required >
+    <label class="form-control-label" id="no" name="silence_instead_argue" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=3 for="silence_instead_argue" name="silence_instead_argue" required >
+    <label class="form-control-label" id="sm" name="silence_instead_argue">rarement</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=2 for="silence_instead_argue" name="silence_instead_argue" required >
+    <label class="form-control-label" id="sm" name="silence_instead_argue">Parfois</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=1 for="silence_instead_argue" name="silence_instead_argue" required >
+    <label class="form-control-label" id="caec" name="silence_instead_argue" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=0 for="silence_instead_argue" name="silence_instead_argue"  required>
+    <label class="form-control-label" id="caec" name="silence_instead_argue" >Toujours</label><br>
+    </div>
+</div>
+<div>
+<label class="lab" for="offensive_expression">Dit-il/elle des expressions offensantes ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="conta" name="offensive_expression" required >
+  <label class="form-control-label" id="no" name="offensive_expression" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="offensive_expression" name="offensive_expression" required >
+  <label class="form-control-label" id="sm" name="offensive_expression">rarement</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=2 for="offensive_expression" name="offensive_expression" required >
+  <label class="form-control-label" id="sm" name="coffensive_expression">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="offensive_expression" name="offensive_expression" required >
+  <label class="form-control-label" id="caec" name="offensive_expression" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="offensive_expression" name="offensive_expression"  required>
+  <label class="form-control-label" id="caec" name="offensive_expression" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="hate_subject">Détestez-vous la façon dont ton conjoint ouvre un sujet.?</label>
+<div class="test">
+<input type="radio" value=4 for="hate_subject" name="hate_subject" required >
+  <label class="form-control-label" id="no" name="hate_subject" >Jamais</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=3 for="hate_subject" name="hate_subject" required >
+  <label class="form-control-label" id="sm" name="hate_subject">rarement</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=2 for="hate_subject" name="hate_subject" required >
+  <label class="form-control-label" id="sm" name="hate_subject">Parfois</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=1 for="hate_subject" name="hate_subject" required >
+  <label class="form-control-label" id="caec" name="hate_subject" >Frequament</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=0 for="hate_subject" name="hate_subject"  required>
+  <label class="form-control-label" id="caec" name="hate_subject" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="insult">Est-ce qu'il/elle t'insulte ?</label>
+<div class="test">
+<input type="radio" value=4 for="insult" name="insult" required >
+  <label class="form-control-label" id="no" name="insult" >Jamais</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=3 for="insult" name="insult" required >
+  <label class="form-control-label" id="sm" name="insult">rarement</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=2 for="insult" name="insult" required >
+  <label class="form-control-label" id="sm" name="insult">Parfois</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=1 for="insult" name="insult" required >
+  <label class="form-control-label" id="caec" name="insult" >Frequament</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=0 for="insult" name="insult"  required>
+  <label class="form-control-label" id="caec" name="insult" >Toujours</label><br>
+</div>
+</div>
+<div>
+  <label class="lab" for="humilate">Est-ce qu'il/elle te humilie?</label>
+  <div class="test">
+  <input type="radio" value=4 for="humilate" name="humilate" required >
+    <label class="form-control-label" id="no" name="humilate" >Jamais</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=3 for="humilate" name="humilate" required >
+    <label class="form-control-label" id="sm" name="humilate">rarement</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=2 for="humilate" name="humilate" required >
+    <label class="form-control-label" id="sm" name="humilate">Parfois</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=1 for="humilate" name="humilate" required >
+    <label class="form-control-label" id="caec" name="humilate" >Frequament</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=0 for="humilate" name="humilate"  required>
+    <label class="form-control-label" id="caec" name="humilate" >Toujours</label><br>
+  </div>
+  </div>
+<div>
+<label class="lab" for="calm_break">Quand tu parles de quelque chose à ton conjoint, ton calme se brise soudainement?</label>
+<div class="test">
+<input type="radio" value=4 for="calm_break" name="calm_break" required >
+  <label class="form-control-label" id="no" name="calm_break" >Jamais</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=3 for="calm_break" name="calm_break" required >
+  <label class="form-control-label" id="sm" name="calm_break">rarement</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=2 for="calm_break" name="calm_break" required >
+  <label class="form-control-label" id="sm" name="calm_break">Parfois</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=1 for="calm_break" name="calm_break" required >
+  <label class="form-control-label" id="caec" name="calm_break" >Frequament</label><br>
+</div>
+<div class="test">
+  <input type="radio" value=0 for="calm_break" name="calm_break"  required>
+  <label class="form-control-label" id="caec" name="calm_break" >Toujours</label><br>
+  </div>
+</div>
+<div>
+  <label class="lab" for="silence_fear">Gardez-vous le silence parce que vous le craignez ?</label>
+<div class="test">
+  <input type="radio" value=4 for="silence_fear" name="silence_fear" required >
+    <label class="form-control-label" id="no" name="silence_fear" >Jamais</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=3 for="silence_fear" name="silence_fear" required >
+    <label class="form-control-label" id="sm" name="silence_fear">rarement</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=2 for="silence_fear" name="silence_fear" required >
+    <label class="form-control-label" id="sm" name="silence_fear">Parfois</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=1 for="silence_fear" name="silence_fear" required >
+    <label class="form-control-label" id="caec" name="silence_fear" >Frequament</label><br>
+  </div>
+  <div class="test">
+    <input type="radio" value=0 for="silence_fear" name="silence_fear"  required>
+    <label class="form-control-label" id="caec" name="silence_fear" >Toujours</label><br>
+    </div>
+</div>
+<div>
+    <label class="lab" for="arguethenleave">Argumentez-vous puis part sans parler ?</label>
+  <div class="test">
+    <input type="radio" value=4 for="arguethenleave" name="arguethenleave" required >
+      <label class="form-control-label" id="no" name="arguethenleave" >Jamais</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=3 for="arguethenleave" name="arguethenleave" required >
+      <label class="form-control-label" id="sm" name="arguethenleave">rarement</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=2 for="arguethenleave" name="arguethenleave" required >
+      <label class="form-control-label" id="sm" name="arguethenleave">Parfois</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=1 for="arguethenleave" name="arguethenleave" required >
+      <label class="form-control-label" id="caec" name="arguethenleave" >Frequament</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=0 for="arguethenleave" name="arguethenleave"  required>
+      <label class="form-control-label" id="caec" name="arguethenleave" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+    <button type="submit">passer au niveau 6</button>
+  </div>
+</form>
+</div>
+
+</body>

@@ -1,0 +1,184 @@
+<head>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/form.css' %}">
+
+</head>
+<body>
+
+<div class="contactez-nous">
+<h1>Etes vous en bonne relation ?</h1>
+<p> !</p>
+<form action="{% url 'divorcetest6'%}" method="post">
+  {% csrf_token %}
+  <div>
+      <label class="lab" for="always_never">Lorsque tu discute avec ton conjoint, utilisez-vous généralement des expressions telles que "tu toujours" ou "tu jamais" ?</label>
+      <div class="test">
+      <input type="radio" value=4 for="always_never" name="always_never" required >
+        <label class="form-control-label" id="no" name="always_never" >Jamais</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=3 for="always_never" name="always_never" required >
+        <label class="form-control-label" id="sm" name="always_never">rarement</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=2 for="always_never" name="always_never" required >
+        <label class="form-control-label" id="sm" name="always_never">Parfois</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=1 for="always_never" name="always_never" required >
+        <label class="form-control-label" id="caec" name="always_never" >Frequament</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=0 for="always_never" name="always_never"  required>
+        <label class="form-control-label" id="caec" name="always_never" >Toujours</label><br>
+      </div>
+      </div>
+  <div>
+    <label class="lab" for="accusations">Est-ce qu'il/elle accuse des choses que vous n'avez pas faites ?</label>
+      <div class="test"> 
+    <input type="radio" value=4 for="accusations" name="accusations" required >
+      <label class="form-control-label" id="no" name="accusations" >Jamais</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=3 for="accusations" name="accusations" required >
+      <label class="form-control-label" id="sm" name="accusations">rarement</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=2 for="accusations" name="accusations" required >
+      <label class="form-control-label" id="sm" name="accusations">Parfois</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=1 for="accusations" name="accusations" required >
+      <label class="form-control-label" id="caec" name="accusations" >Frequament</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=0 for="accusations" name="accusations"  required>
+      <label class="form-control-label" id="caec" name="accusations" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+   
+    <label class="lab" for="imright">Est-ce que tu pense que tu as toujours raison ?</label>
+    <div class="test"> 
+      <input type="radio" value=4 for="accusations" name="imright" required >
+        <label class="form-control-label" id="no" name="imright" >Jamais</label><br>
+        </div>
+        <div class="test"> 
+        <input type="radio" value=3 for="accusations" name="imright" required >
+       <label class="form-control-label" id="sm" name="accusations">rarement</label><br>
+       </div>
+       <div class="test"> 
+        <input type="radio" value=2 for="accusations" name="imright" required >
+        <label class="form-control-label" id="sm" name="imright">Parfois</label><br>
+        </div>
+      <div class="test"> 
+        <input type="radio" value=1 for="accusations" name="imright" required >
+        <label class="form-control-label" id="caec" name="imright" >Frequament</label><br>
+        </div>
+      <div class="test"> 
+        <input type="radio" value=0 for="accusations" name="imright"  required>
+        <label class="form-control-label" id="caec" name="imright" >Toujours</label><br>
+        </div>
+  </div>
+<div>
+<label class="lab" for="silence_fear_anger">Gardez-vous le silence parce que vous craignez de le mettre en colère ?</label>
+
+<div class="test"> 
+<input type="radio" value=4 for="conta" name="silence_fear_anger" required >
+  <label class="form-control-label" id="no" name="silence_fear_anger" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="silence_fear_anger" name="silence_fear_anger" required >
+  <label class="form-control-label" id="sm" name="silence_fear_anger">rarement</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=2 for="silence_fear_anger" name="silence_fear_anger" required >
+  <label class="form-control-label" id="sm" name="csilence_fear_anger">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="silence_fear_anger" name="silence_fear_anger" required >
+  <label class="form-control-label" id="caec" name="silence_fear_anger" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="silence_fear_anger" name="silence_fear_anger"  required>
+  <label class="form-control-label" id="caec" name="silence_fear_anger" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="mariage">Voulez-vous garder votre mariage ?</label>
+
+<div class="test"> 
+<input type="radio" value=4 for="mariage" name="mariage" required >
+  <label class="form-control-label" id="no" name="mariage" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="mariage" name="mariage" required >
+  <label class="form-control-label" id="sm" name="mariage">rarement</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=2 for="mariage" name="mariage" required >
+  <label class="form-control-label" id="sm" name="mariage">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="mariage" name="mariage" required >
+  <label class="form-control-label" id="caec" name="mariage" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="mariage" name="mariage"  required>
+  <label class="form-control-label" id="caec" name="mariage" >Toujours</label><br>
+</div>
+
+</div>
+<div>
+<label class="lab" for="guilty">Pensez-vous que vous êtes coupable?</label>
+<div class="test"> 
+<input type="radio" value=4 for="guilty" name="guilty" required >
+  <label class="form-control-label" id="no" name="guilty" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="guilty" name="guilty" required >
+  <label class="form-control-label" id="sm" name="guilty">rarement</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=2 for="guilty" name="guilty" required >
+  <label class="form-control-label" id="sm" name="guilty">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="guilty" name="guilty" required >
+  <label class="form-control-label" id="caec" name="guilty" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="guilty" name="guilty"  required>
+  <label class="form-control-label" id="caec" name="guilty" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="wrong">Pensez-vous parfois que vous vous trompez de lui?</label>
+<div class="test"> 
+<input type="radio" value=4 for="wrong" name="wrong" required >
+  <label class="form-control-label" id="no" name="wrong" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="wrong" name="wrong" required >
+  <label class="form-control-label" id="sm" name="wrong">rarement</label><br>
+  </div>
+<div class="test"> 
+  <input type="radio" value=2 for="wrong" name="wrong" required >
+  <label class="form-control-label" id="sm" name="wrong">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="wrong" name="wrong" required >
+  <label class="form-control-label" id="caec" name="wrong" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="wrong" name="wrong"  required>
+  <label class="form-control-label" id="caec" name="wrong" >Toujours</label><br>
+  </div>
+</div>
+  <div>
+    <button type="submit">Tester</button>
+  </div>
+</form>
+</div>
+
+</body>

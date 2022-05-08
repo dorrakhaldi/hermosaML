@@ -1,0 +1,134 @@
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/form.css' %}" />
+</head>
+<body>
+  <div class="contactez-nous">
+    <h1>Level 1</h1>
+    <p>
+      Répondez attentivement aux questions pour que le résultat soit plus précise :
+    </p>
+    <form action="/stress_form1" method="post">
+      {% csrf_token %}
+      <div>
+        <label for="nom">Name :</label>
+        <input type="text" id="nom" name="nom" placeholder="Martin" required />
+      </div> 
+       <div>
+        <label for="age" class="lab" >Age</label>
+        <input 
+          style="width: min-content"
+          type="text"
+          id="age"
+          name="age"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="lab" for="genre">Gender :</label>
+      <div class="test">
+        <input type="radio" id="h" name="genre" value="1" required />
+        <label for="huey">Man</label>
+      </div>
+      <div class="test">
+        <input type="radio" id="f" name="genre" value="0" />
+        <label for="dewey">Woman</label>
+        </div>
+       
+      </div>
+
+      <div>
+        <label class="lab" for="Genre">Married ?</label>
+      <div class="test">
+        <input type="radio" id="married" name="married" value="1" required />
+        <label for="huey">Yes</label>
+      </div>
+      <div class="test">
+        <input type="radio" id="married" name="married" value="0" />
+        <label for="dewey">No</label>
+        </div>     
+      </div>
+
+    <div>
+     <label for="enfants" class="lab"> Number of children ?</label>
+     <input 
+       style="width: min-content"
+       type="text"
+       id="enfants"
+       name="enfants"
+       required
+     />
+    </div>
+
+    <div>
+      <label for="niveau" class="lab"> Education Level ? </label>
+      <input 
+        style="width: min-content"
+        type="text"
+        id="niveau"
+        name="niveau"
+        required
+      />
+     </div>
+
+    <div>
+      <label for="membres_familles" class="lab"> Number of family members? </label>
+      <input 
+        style="width: min-content"
+        type="text"
+        id="membres_familles"
+        name="membres_familles"
+        required
+      />
+     </div>
+
+     <div>
+      <label for="gained" class="lab"> what's your gained asset ? </label>
+      <input 
+        style="width: min-content"
+        type="text"
+        id="gained"
+        name="gained"
+        required
+      />
+     </div>
+     <div>
+      <label for="durable" class="lab"> what's your durable asset? </label>
+      <input 
+        style="width: min-content"
+        type="text"
+        id="durable"
+        name="durable"
+        required
+      />
+     </div>
+     <div>
+      <label for="saveasset" class="lab"> what's your save asset ? </label>
+      <input 
+        style="width: min-content"
+        type="text"
+        id="saveasset"
+        name="saveasset"
+        required
+      />
+      </div>
+      <div>
+        
+      <label for="living_expenses" class="lab"> what's your living expenses ? </label>
+      <input 
+        style="width: min-content"
+        type="text"
+        id="living_expenses"
+        name="living_expenses"
+        required
+      />
+      
+      </div>
+     
+      <div>
+        <button type="submit">Next</button>
+      </div>
+    </form>
+  </div>
+</body>

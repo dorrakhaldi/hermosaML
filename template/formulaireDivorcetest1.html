@@ -1,0 +1,233 @@
+<head>
+  {% load static %}
+      <link rel="stylesheet" href="{% static 'assets/css/form.css' %}">
+
+  </head>
+  <body>
+
+<div class="contactez-nous">
+  <h1>Etes vous en bonne relation ?</h1>
+  <p> Le but de ce questionnaire est de vous aider à Tester votre relation
+    <br />Avant qu'il ne soit
+    trop tard, essayer de répondre aux questions ,en pensant à la manière dont
+    vous avez eu tendance à ressentir les choses,à penser et à agir durant ces
+    dernières années ...</p>
+  <form  method="post" action="{% url 'divorcetest1'%}">
+    {% csrf_token %}
+    <div>
+      <div>
+      <label class="lab" for="travel">Aimez-vous voyager ensemble?</label>
+      <div class="test">
+      <input type="radio" value=4 for="travel" name="travel" required >
+      <label class="form-control-label" id="no" name="travel" >jamais</label>
+      </div>
+      <div class="test">
+        <input type="radio" value=3 for="travel" name="travel" required >
+        <label class="form-control-label" id="sm" name="travel">rarement</label>
+        </div>
+        <div class="test">
+        <input type="radio" value=2 for="travel" name="travel" required >
+        <label class="form-control-label" id="sm" name="travel">Parfois</label>
+        </div>
+        <div class="test">
+        <input type="radio" value=1 for="travel" name="travel" required >
+        <label class="form-control-label" id="caec" name="travel" >Frequament</label>
+        </div>
+        <div class="test">
+        <input type="radio" value=0 for="travel" name="travel"  required>
+        <label class="form-control-label" id="caec" name="travel" >Toujours</label>
+        </div>
+
+    </div>
+    <div>
+      <label class="lab" for="holidays">Vous préférez passer les vacances ensemble ?</label>
+      <div class="test">
+        <input type="radio" value=4 for="travel" name="holidays" required >
+          <label class="form-control-label" id="no" name="holidays" >jamais</label><br>
+      </div>
+      <div class="test">
+          <input type="radio" value=3 for="travel" name="holidays" required >
+         <label class="form-control-label" id="sm" name="travel">rarement</label><br>
+         </div>
+         <div class="test">
+          <input type="radio" value=2 for="travel" name="holidays" required >
+          <label class="form-control-label" id="sm" name="holidays">Parfois</label><br>
+          </div>
+          <div class="test">
+          <input type="radio" value=1 for="travel" name="holidays" required >
+          <label class="form-control-label" id="caec" name="holidays" >Frequament</label><br>
+          </div>
+          <div class="test">
+          <input type="radio" value=0 for="travel" name="holidays"  required>
+          <label class="form-control-label" id="caec" name="holidays" >Toujours</label><br>
+          </div>
+    </div>
+    <div>
+      <label class="lab" for="sptime">Passez-vous des moments intimes ensemble ?</label>
+      <div class="test">
+      <input type="radio" value=4 for="travel" name="sptime" required >
+        <label class="form-control-label" id="no" name="sptime" >jamais</label><br>
+        </div>
+        <div class="test">
+        <input type="radio" value=3 for="travel" name="sptime" required >
+        <label class="form-control-label" id="sm" name="sptime">rarement</label><br>
+        </div>
+        <div class="test">
+        <input type="radio" value=2 for="travel" name="sptime" required >
+        <label class="form-control-label" id="sm" name="sptime">Parfois</label><br>
+        </div>
+        <div class="test">
+        <input type="radio" value=1 for="travel" name="sptime" required >
+        <label class="form-control-label" id="caec" name="sptime" >Frequament</label><br>
+        </div>
+        <div class="test">
+        <input type="radio" value=0 for="travel" name="sptime"  required>
+        <label class="form-control-label" id="caec" name="sptime" >Toujours</label><br>
+        </div>
+  </div>
+  <div>
+    <label class="lab" for="contact">Communiquez-vous avec lui ?</label>
+    <div class="test">
+    <input type="radio" value=4 for="contact" name="contact" required >
+      <label class="form-control-label" id="no" name="contact" >jamais</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=3 for="contact" name="contact" required >
+      <label class="form-control-label" id="sm" name="contact">rarement</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=2 for="contact" name="contact" required >
+      <label class="form-control-label" id="sm" name="contact">Parfois</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=1 for="contact" name="contact" required >
+      <label class="form-control-label" id="caec" name="contact" >Frequament</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=0 for="contact" name="contact"  required>
+      <label class="form-control-label" id="caec" name="contact" >Toujours</label><br>
+</div>
+</div>
+<div>
+  <label class="lab" for="know_well">Pensez-vous que vous connaissez bien votre partenaire ?</label>
+  <div class="test">
+  <input type="radio" value=4 for="conta" name="know_well" required >
+    <label class="form-control-label" id="no" name="know_well" >jamais</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=3 for="know_well" name="know_well" required >
+    <label class="form-control-label" id="sm" name="know_well">rarement</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=2 for="know_well" name="know_well" required >
+    <label class="form-control-label" id="sm" name="cknow_well">Parfois</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=1 for="know_well" name="know_well" required >
+    <label class="form-control-label" id="caec" name="know_well" >Frequament</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=0 for="know_well" name="know_well"  required>
+    <label class="form-control-label" id="caec" name="know_well" >Toujours</label><br>
+    </div>
+</div>
+<div>
+  <label class="lab" for="hometime">Passez-vous du temps  à la maison ensemble  ?</label>
+  <div class="test">
+  <input type="radio" value=4 for="hometime" name="hometime" required >
+    <label class="form-control-label" id="no" name="hometime" >jamais</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=3 for="hometime" name="hometime" required >
+    <label class="form-control-label" id="sm" name="hometime">rarement</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=2 for="hometime" name="hometime" required >
+    <label class="form-control-label" id="sm" name="hometime">Parfois</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=1 for="hometime" name="hometime" required >
+    <label class="form-control-label" id="caec" name="hometime" >Frequament</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=0 for="hometime" name="hometime"  required>
+    <label class="form-control-label" id="caec" name="hometime" >Toujours</label><br>
+    </div>
+</div>
+<div>
+  <label class="lab" for="strangers">Avez-vous toujours l'impression d'être comme des étrangers ?</label>
+  <div class="test">
+  <input type="radio" value=4 for="strangers" name="strangers" required >
+    <label class="form-control-label" id="no" name="strangers" >jamais</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=3 for="strangers" name="strangers" required >
+    <label class="form-control-label" id="sm" name="strangers">rarement</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=2 for="strangers" name="strangers" required >
+    <label class="form-control-label" id="sm" name="strangers">Parfois</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=1 for="strangers" name="strangers" required >
+    <label class="form-control-label" id="caec" name="strangers" >Frequament</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=0 for="strangers" name="strangers"  required>
+    <label class="form-control-label" id="caec" name="strangers" >Toujours</label><br>
+    </div>
+</div>
+<div>
+  <label class="lab" for="inner_world">Préférez-vous passer du temps dans votre monde intérieur ?</label>
+  <div class="test">
+  <input type="radio" value=4 for="inner_world" name="inner_world" required >
+    <label class="form-control-label" id="no" name="inner_world" >jamais</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=3 for="inner_world" name="inner_world" required >
+    <label class="form-control-label" id="sm" name="inner_world">rarement</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=2 for="inner_world" name="inner_world" required >
+    <label class="form-control-label" id="sm" name="inner_world">Parfois</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=1 for="inner_world" name="inner_world" required >
+    <label class="form-control-label" id="caec" name="inner_world" >Frequament</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=0 for="inner_world" name="inner_world"  required>
+    <label class="form-control-label" id="caec" name="inner_world" >Toujours</label><br>
+    </div>
+</div>
+<div>
+  <label class="lab" for="inadequate">Pensez-vous que ton partenair est insuffisant?</label>
+  <div class="test">
+  <input type="radio" value=4 for="inadequate" name="inadequate" required >
+    <label class="form-control-label" id="no" name="inadequate" >jamais</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=3 for="inadequate" name="inadequate" required >
+    <label class="form-control-label" id="sm" name="inadequate">rarement</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=2 for="inadequate" name="inadequate" required >
+    <label class="form-control-label" id="sm" name="inadequate">Parfois</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=1 for="inadequate" name="inadequate" required >
+    <label class="form-control-label" id="caec" name="inadequate" >Frequament</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=0 for="inadequate" name="inadequate"  required>
+    <label class="form-control-label" id="caec" name="inadequate" >Toujours</label><br>
+    </div>
+</div>
+</div>
+<div>
+      <button class="btn" type="submit">Passer au niveau 2</button> 
+    </div>
+  </form>
+</div>
+
+</body>

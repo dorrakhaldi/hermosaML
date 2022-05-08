@@ -1,0 +1,122 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/form.css' %}" />
+  </head>
+  <body>
+    <div class="contactez-nous">
+      <h1>level 2</h1>
+    
+      <form action="/stress_form2" method="post">
+        {% csrf_token %}
+        
+        <div>
+          <label for="others_expenses" class="lab"> what's your other expenses ? </label>
+          <input 
+            style="width: min-content"
+            type="text"
+            id="others_expenses"
+            name="others_expenses"
+            required
+          />
+          </div>
+      <div>
+          <label for="incoming_salary" class="lab"> how much is your salary ? </label>
+          <input 
+            style="width: min-content"
+            type="text"
+            id="incoming_salary"
+            name="incoming_salary"
+            required
+          />
+          </div>
+  
+          <div>
+            <label for="incoming_own_farm" class="lab"> Do you have an income farm ? </label>
+            <input 
+              style="width: min-content"
+              type="text"
+              id="incoming_own_farm"
+              name="incoming_own_farm"
+              required
+            />
+            </div>
+  
+            <div>
+              <label for="incoming_business" class="lab"> what's your incoming business ? </label>
+              <input 
+                style="width: min-content"
+                type="text"
+                id="incoming_business"
+                name="incoming_business"
+                required
+              />
+              </div>
+              <div>
+                <label for="incoming_no_business" class="lab"> what's your incoming no business ? </label>
+                <input 
+                  style="width: min-content"
+                  type="text"
+                  id="incoming_no_business"
+                  name="incoming_no_business"
+                  required
+                />
+                </div>
+                
+                <div>
+                  <label for="incoming_agricultural" class="lab"> what's your incoming agricultural ? </label>
+                  <input 
+                    style="width: min-content"
+                    type="text"
+                    id="incoming_agricultural"
+                    name="incoming_agricultural"
+                    required
+                  />
+                  </div>
+                  
+                  <div>
+                    <label for="farm_expenses" class="lab"> what's your farm expenses ? </label>
+                    <input 
+                      style="width: min-content"
+                      type="text"
+                      id="farm_expenses"
+                      name="farm_expenses"
+                      required
+                    />
+                    </div>
+                    <div>
+                      <label for="labor_primary" class="lab"> what's your labor primary? </label>
+                      <input 
+                        style="width: min-content"
+                        type="text"
+                        id="labor_primary"
+                        name="labor_primary"
+                        required
+                      />
+                      </div>
+                      <div>
+                        <label for="lasting_investment" class="lab"> what's your lasting investment ? </label>
+                        <input 
+                          style="width: min-content"
+                          type="text"
+                          id="lasting_investment"
+                          name="lasting_investment"
+                          required
+                        />
+                        </div>
+                        <div>
+                          <label for="no_lasting_investment" class="lab"> what's your no lasting investment ? </label>
+                          <input 
+                            style="width: min-content"
+                            type="text"
+                            id="no_lasting_investment"
+                            name="no_lasting_investment"
+                            required
+                          />
+                        </div>
+        <div>
+          <button type="submit">Go ! </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  

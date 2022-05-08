@@ -1,0 +1,131 @@
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/form.css' %}" />
+</head>
+<body>
+  <div class="contactez-nous" style="height: fit-content">
+    <h1
+      style="
+        text-align: center;
+        text-transform: capitalize;
+        size: 200px;
+        color: brown;
+        text-shadow: -1px -1px 1px brown, 0px 2px 1px rgba(0, 0, 0, 0.5);
+        font-size: 2.6rem;
+        line-height: 1.5;
+      "
+    >
+      Votre Santé Professionel
+    </h1>
+    <p style="font-size: large">
+      Le but de ce questionnaire est de vous aider à savoir est ce que vous
+      souffrez de <strong>BURNOUT</strong> autrement dit souffrez vous de
+      l'epuisement physique,morale professionel,..? <br />Avant qu'il ne soit
+      trop tard, essayer de répondre aux questions ,en pensant à la manière dont
+      vous avez eu tendance à ressentir les choses,à penser et à agir durant ces
+      dernières années ...
+    </p>
+    <form  method="post" action="{% url 'burn1' %}">
+      {% csrf_token %}
+
+      <div>
+        <label for="nom" class="lab" >Age</label>
+        <input 
+          style="width: min-content"
+          type="text"
+          id="age"
+          name="age"
+          required
+        />
+
+        <div >
+          <label class="lab" for="Genre">Genre</label>
+        <div class="test">
+          <input type="radio" id="h" name="genre" value="1" required />
+          <label for="huey">Homme</label>
+        </div>
+        <div class="test">
+          <input type="radio" id="f" name="genre" value="0" />
+          <label for="dewey">Femme</label>
+          </div>
+          <div class="test">
+          <input type="radio" id="au" name="genre" value="2" />
+          <label for="louie">Autre</label></div>
+        </div>
+        <div>
+          <label for="s1-t" class="lab"> Êtes-vous travailleur autonome ?</label>
+          <div class="test"></div>
+          <input type="radio" id="s1-1" name="s1" value="1"  required />
+          <label for="huey">Oui</label>
+          </div>
+          <div class="test">
+          <input type="radio" id="s1-2" name="s1" value="0" />
+          <label for="dewey">Non</label>
+          </div>
+         </div>
+         <div >
+          <label for="s2-t" class="lab"> Avez-vous des antécédents familiaux de maladie mentale ?</label>
+          <div class="test">
+          <input type="radio" id="s2-1" name="s2" value="1" required  />
+          <label for="huey">Oui</label></div>
+          <div class="test">
+          <input type="radio" id="s2-2" name="s2" value="0" />
+          <label for="dewey">Non</label></div>
+          </div>
+            <div>
+          <label for="s4-t" class="lab">    Si vous avez un problème de santé mentale, pensez-vous que cela interfère avec votre travail ?</label>
+          <div class="test">
+          <input type="radio" id="s4-1" name="s4" value="0"  required/>
+          <label for="s4-1">je ne sais pas</label></div>
+          <div class="test">
+          <input type="radio" id="s4-2" name="s4" value="3"  />
+          <label for="huey">rarement</label></div>
+          <div class="test">
+          <input type="radio" id="s4-3" name="s4" value="4" />
+          <label for="dewey">parfois</label></div>
+          <div class="test">
+          <input type="radio" id="s4-4" name="s4" value="2"  />
+          <label for="huey">souvent</label></div>
+          <div class="test">
+          <input type="radio" id="s4-5" name="s4" value="1"  />
+          <label for="huey">jamais</label></div>
+          </div>
+         <div >
+          <label for="s5-t" class="lab">Combien d'employés votre entreprise ou organisation compte-t-elle ?</label>
+          <div class="test">
+          <input type="radio" id="s5-2" name="s5" value="0"  required/>
+          <label for="dewey">Entre 1 et 5</label></div>
+          <div class="test">
+          <input type="radio" id="s5-5" name="s5" value="4" />
+          <label for="louie">Entre 6 et 25</label></div>
+          <div class="test">
+          <input type="radio" id="s5-3" name="s5" value="2" />
+          <label for="louie">Entre 26 et 100</label></div>
+          <div class="test">
+          <input type="radio" id="s5-1" name="s5" value="1"  />
+          <label for="huey">Entre 100 et 500</label></div>
+          <div class="test">
+          <input type="radio" id="s5-4" name="s5" value="3" />
+          <label for="louie">entre 500 et 1000</label></div>
+          <div class="test">
+          <input type="radio" id="s5-5" name="s5" value="5" />
+          <label for="louie">Supérieur à 1000</label></div>
+          </div>
+
+          <div>
+          <label for="s6-t" class="lab"> Travaillez-vous à distance (en dehors d'un bureau) au moins 50 % du temps ?</label>
+          <div class="test">
+          <input type="radio" id="s6-1" name="s6" value="1" required />
+          <label for="huey">Oui</label></div>
+          <div class="test">
+          <input type="radio" id="s6-2" name="s6" value="0" />
+          <label for="dewey">Non</label></div>
+          </div>   
+
+        <div>
+          <button type="submit">Niveau 2 --> </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>

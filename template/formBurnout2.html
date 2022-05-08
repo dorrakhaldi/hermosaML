@@ -1,0 +1,140 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/form.css' %}" />
+  </head>
+  <body>
+    <div class="contactez-nous" style="height: fit-content">
+      <h1
+        style="
+          text-align: center;
+          text-transform: capitalize;
+          size: 200px;
+          color: brown;
+          text-shadow: -1px -1px 1px brown, 0px 2px 1px rgba(0, 0, 0, 0.5);
+          font-size: 2.6rem;
+          line-height: 1.5;
+        "
+      >
+        Votre Santé professionel
+      </h1>
+      <form method="post" action="{% url 'burn2' %}">
+        {% csrf_token %}
+  
+        <div>
+          <div>
+            <label for="s7-t" class="lab"> Votre employeur est-il principalement une entreprise/organisation technologique ?</label>
+            <div class="test">
+            <input type="radio" id="s7-1" name="s7" value="1" required />
+            <label for="huey">Oui</label></div>
+            <div class="test">
+            <input type="radio" id="s7-2" name="s7" value="0" />
+            <label for="dewey">Non</label></div></div>
+
+            <div>
+            <label for="s8-t" class="lab">  Votre employeur offre-t-il des prestations de santé mentale ?</label>
+            <div class="test">
+            <input type="radio" id="s8-1" name="s8" value="2" required />
+            <label for="huey">Oui</label></div>
+            <div class="test">
+            <input type="radio" id="s8-2" name="s8" value="1" />
+            <label for="dewey">Non</label></div>
+            <div class="test">
+            <input type="radio" id="s8-3" name="s8" value="0" />
+            <label for="dewey">je ne sais pas</label></div></div>
+
+            <div>
+            <label for="s9-t" class="lab">Connaissez-vous les options de soins de santé mentale offertes par votre employeur?</label>
+            <div class="test">
+            <input type="radio" id="s9-1" name="s9" value="2" required />
+            <label for="huey">Oui</label></div>
+            <div class="test">
+            <input type="radio" id="s9-2" name="s9" value="1" >
+            <label for="s4-1">pas certain</label></div>
+            <div class="test">
+            <input type="radio" id="s9-3" name="s9" value="0" >
+            <label for="s4-1">Non</label></div>
+          </div>
+
+          <div>
+            <label for="s10-t" class="lab">  Votre employeur offre-t-il des prestations de santé mentale ?</label>
+            <div class="test">
+            <input type="radio" id="s10-1" name="s10" value="2" required />
+            <label for="huey">Oui</label></div>
+            <div class="test">
+            <input type="radio" id="s10-2" name="s10" value="1" />
+            <label for="dewey">Non</label></div>
+            <div class="test">
+            <input type="radio" id="s10-3" name="s10" value="0" />
+            <label for="dewey">je ne sais pas</label></div>
+           </div> 
+
+           <div>
+            <label for="s11-t" class="lab">  Votre employeur fournit-il des ressources pour en savoir plus sur les problèmes de santé mentale ?
+            </label>
+            <div class="test">
+            <input type="radio" id="s11-1" name="s11" value="2" required />
+            <label for="huey">Oui</label></div>
+            <div class="test">
+            <input type="radio" id="s11-2" name="s11" value="1" />
+            <label for="dewey">Non</label></div>
+            <div class="test">
+            <input type="radio" id="s11-3" name="s11" value="0" />
+            <label for="dewey">je ne sais pas</label></div>
+            </div>
+
+            <div>
+            <label for="s12-t" class="lab"> Votre anonymat est-il protégé si vous choisissez de profiter de ressources en santé mentale pour faire un traitement ?
+            </label>
+            <div class="test">
+            <input type="radio" id="s12-1" name="s12" value="2" required />
+            <label for="huey">Oui</label></div>
+            <div class="test">
+            <input type="radio" id="s12-2" name="s12" value="1" />
+            <label for="dewey">Non</label></div>
+            <div class="test">
+            <input type="radio" id="s12-3" name="s12" value="0" />
+            <label for="dewey">je ne sais pas</label></div>
+            </div>
+            
+            <div>
+            <label for="s13-t" class="lab">Est-il facile de prendre un congé de maladie pour un problème de santé mentale ?</label>
+            <div class="test">
+            <input type="radio" id="s13-1" name="s13" value="4" required />
+            <label for="s4-1">très facile</label></div>
+            <div class="test">
+            <input type="radio" id="s13-2" name="s13" value="2" required />
+            <label for="huey">Assez facile</label></div>
+            <div class="test">
+            <input type="radio" id="s13-3" name="s13" value="1" />
+            <label for="dewey">un peu difficile</label></div>
+            <div class="test">
+            <input type="radio" id="s13-4" name="s13" value="3" required />
+            <label for="huey">très difficile</label></div>
+            <div class="test">
+            <input type="radio" id="s13-5" name="s13" value="0" required />
+            <label for="huey">ne sais pas</label></div>
+          </div>
+
+          <div>
+            <label for="s14-t" class="lab"> Pensez-vous que discuter d'un problème de santé mentale avec votre employeur aurait des conséquences négatives ?
+            </label>
+            <div class="test">
+            <input type="radio" id="s14-1" name="s14" value="2" required />
+            <label for="huey">Oui</label></div>
+            <div class="test">
+            <input type="radio" id="s14-2" name="s14" value="1" />
+            <label for="dewey">Non</label></div>
+            <div class="test">
+            <input type="radio" id="s14-3" name="s14" value="0" />
+            <label for="dewey">peut être</label></div>
+            </div>
+          
+  </div>
+          <div>
+            <button type="submit">Niveau 3 --> </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  

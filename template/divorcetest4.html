@@ -1,0 +1,252 @@
+<head>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/form.css' %}">
+
+</head>
+<body>
+
+<div class="contactez-nous">
+<h1>Etes vous en bonne relation ?</h1>
+<p> !</p>
+<form action="{% url 'divorcetest4'%}" method="post">
+  {% csrf_token %}
+  <div>
+    <label class="lab" for="likes">savez-vous exactement ce que ton conjoint aime ?</label>
+  <div class="test"> 
+    <input type="radio" value=4 for="likes" name="likes" required >
+      <label class="form-control-label" id="no" name="likes" >Jamais</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=3 for="likes" name="likes" required >
+      <label class="form-control-label" id="sm" name="likes">rarement</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=2 for="likes" name="likes" required >
+      <label class="form-control-label" id="sm" name="likes">Parfois</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=1 for="likes" name="likes" required >
+      <label class="form-control-label" id="caec" name="likes" >Frequament</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=0 for="likes" name="likes"  required>
+      <label class="form-control-label" id="caec" name="likes" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+  <div>
+    <label class="lab" for="roles">Avez-vous des idées similaires sur la façon dont les rôles devraient être dans le mariage?</label>
+  <div class="test"> 
+    <input type="radio" value=4 for="roles" name="roles" required >
+      <label class="form-control-label" id="no" name="roles" >Jamais</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=3 for="roles" name="roles" required >
+      <label class="form-control-label" id="sm" name="roles">rarement</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=2 for="roles" name="roles" required >
+      <label class="form-control-label" id="sm" name="roles">Parfois</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=1 for="roles" name="roles" required >
+      <label class="form-control-label" id="caec" name="roles" >Frequament</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=0 for="roles" name="roles"  required>
+      <label class="form-control-label" id="caec" name="roles" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+    <label class="lab" for="entertain">Aimez-vous être avec lui/elle?</label>
+  <div class="test"> 
+      <input type="radio" value=4 for="roles" name="entertain" required >
+        <label class="form-control-label" id="no" name="entertain" >Jamais</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=3 for="roles" name="entertain" required >
+       <label class="form-control-label" id="sm" name="roles">rarement</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=2 for="roles" name="entertain" required >
+        <label class="form-control-label" id="sm" name="entertain">Parfois</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=1 for="roles" name="entertain" required >
+        <label class="form-control-label" id="caec" name="entertain" >Frequament</label><br>
+      </div>
+      <div class="test"> 
+        <input type="radio" value=0 for="roles" name="entertain"  required>
+        <label class="form-control-label" id="caec" name="entertain" >Toujours</label><br>
+        </div>
+  </div>
+  
+<div>
+  <label class="lab" for="friends_social">savez-vous les amis de votre conjoint ?</label>
+<div class="test"> 
+  <input type="radio" value=4 for="friends_social" name="friends_social" required >
+    <label class="form-control-label" id="no" name="friends_social" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=3 for="friends_social" name="friends_social" required >
+    <label class="form-control-label" id="sm" name="friends_social">rarement</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=2 for="friends_social" name="friends_social" required >
+    <label class="form-control-label" id="sm" name="friends_social">Parfois</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=1 for="friends_social" name="friends_social" required >
+    <label class="form-control-label" id="caec" name="friends_social" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+    <input type="radio" value=0 for="friends_social" name="friends_social"  required>
+    <label class="form-control-label" id="caec" name="friends_social" >Toujours</label><br>
+    </div>
+</div>
+<div>
+<label class="lab" for="sudden_disscussion">Avez-vous des discussions soudaines avec lui/elle ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="sudden_disscussion" name="sudden_disscussion" required >
+  <label class="form-control-label" id="no" name="sudden_disscussion" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="sudden_disscussion" name="sudden_disscussion" required >
+  <label class="form-control-label" id="sm" name="sudden_disscussion">rarement</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=2 for="sudden_disscussion" name="sudden_disscussion" required >
+  <label class="form-control-label" id="sm" name="sudden_disscussion">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="sudden_disscussion" name="sudden_disscussion" required >
+  <label class="form-control-label" id="caec" name="sudden_disscussion" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="sudden_disscussion" name="sudden_disscussion"  required>
+  <label class="form-control-label" id="caec" name="sudden_disscussion" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="care_sick">Est-ce qu'il/elle s'occupe de vous quand vous êtes malade ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="care_sick" name="care_sick" required >
+  <label class="form-control-label" id="no" name="care_sick" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="care_sick" name="care_sick" required >
+  <label class="form-control-label" id="sm" name="care_sick">rarement</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=2 for="care_sick" name="care_sick" required >
+  <label class="form-control-label" id="sm" name="care_sick">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="care_sick" name="care_sick" required >
+  <label class="form-control-label" id="caec" name="care_sick" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="care_sick" name="care_sick"  required>
+  <label class="form-control-label" id="caec" name="care_sick" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="peoplegoal">Préferez-vous le même caractére chez les autres personnes?</label>
+<div class="test"> 
+<input type="radio" value=4 for="peoplegoal" name="peoplegoal" required >
+  <label class="form-control-label" id="no" name="peoplegoal" >Jamais</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=3 for="peoplegoal" name="peoplegoal" required >
+  <label class="form-control-label" id="sm" name="peoplegoal">rarement</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=2 for="peoplegoal" name="peoplegoal" required >
+  <label class="form-control-label" id="sm" name="peoplegoal">Parfois</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=1 for="peoplegoal" name="peoplegoal" required >
+  <label class="form-control-label" id="caec" name="peoplegoal" >Frequament</label><br>
+</div>
+<div class="test"> 
+  <input type="radio" value=0 for="peoplegoal" name="peoplegoal"  required>
+  <label class="form-control-label" id="caec" name="peoplegoal" >Toujours</label><br>
+  </div>
+</div>
+<div>
+    <label class="lab" for="negative_personality">A-t-il/elle une personnalité négative ?</label>
+  <div class="test"> 
+    <input type="radio" value=4 for="negative_personality" name="negative_personality" required >
+      <label class="form-control-label" id="no" name="negative_personality" >Jamais</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=3 for="negative_personality" name="negative_personality" required >
+      <label class="form-control-label" id="sm" name="negative_personality">rarement</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=2 for="negative_personality" name="negative_personality" required >
+      <label class="form-control-label" id="sm" name="negative_personality">Parfois</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=1 for="negative_personality" name="negative_personality" required >
+      <label class="form-control-label" id="caec" name="negative_personality" >Frequament</label><br>
+    </div>
+    <div class="test"> 
+      <input type="radio" value=0 for="negative_personality" name="negative_personality"  required>
+      <label class="form-control-label" id="caec" name="negative_personality" >Toujours</label><br>
+      </div>
+  </div>
+  
+  <div>
+    <label class="lab" for="harmony">Pensez-vous que vous êtes en harmonie?</label>
+    <div class="test"> 
+      <input type="radio" value=4 for="fav_food" name="harmony" required >
+        <label class="form-control-label" id="no" name="harmony" >Jamais</label><br>
+        </div>
+        <div class="test"> 
+        <input type="radio" value=3 for="fav_food" name="harmony" required >
+       <label class="form-control-label" id="sm" name="fav_food">rarement</label><br>
+       </div>
+       <div class="test"> 
+        <input type="radio" value=2 for="fav_food" name="harmony" required >
+        <label class="form-control-label" id="sm" name="harmony">Parfois</label><br>
+        </div>
+        <div class="test"> 
+        <input type="radio" value=1 for="fav_food" name="harmony" required >
+        <label class="form-control-label" id="caec" name="harmony" >Frequament</label><br>
+        </div>
+        <div class="test"> 
+        <input type="radio" value=0 for="fav_food" name="harmony"  required>
+        <label class="form-control-label" id="caec" name="harmony" >Toujours</label><br>
+        </div>
+  </div>
+  <div>
+    <label class="lab" for="hisitant_ind"> n'hésiterais-tu pas à parler à ton conjoint de son/sa insuffisance ?</label>
+    <div class="test"> 
+    <input type="radio" value=4 for="fav_food" name="hisitant_ind" required >
+      <label class="form-control-label" id="no" name="hisitant_ind" >Jamais</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=3 for="fav_food" name="hisitant_ind" required >
+      <label class="form-control-label" id="sm" name="hisitant_ind">rarement</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=2 for="fav_food" name="hisitant_ind" required >
+      <label class="form-control-label" id="sm" name="hisitant_ind">Parfois</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=1 for="fav_food" name="hisitant_ind" required >
+      <label class="form-control-label" id="caec" name="hisitant_ind" >Frequament</label><br>
+      </div>
+      <div class="test"> 
+      <input type="radio" value=0 for="fav_food" name="hisitant_ind"  required>
+      <label class="form-control-label" id="caec" name="hisitant_ind" >Toujours</label><br>
+      </div>
+</div>
+  <div>
+    <button type="submit">Passer au niveau 5</button>
+  </div>
+</form>
+</div>
+
+</body>

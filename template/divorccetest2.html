@@ -1,0 +1,229 @@
+<head>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/form.css' %}">
+
+</head>
+<body>
+
+<div class="contactez-nous">
+<h1>Etes vous en bonne relation ?</h1>
+<p> !</p>
+<form action="{% url 'divorcetest2'%}" method="post">
+  {% csrf_token %}
+ <div>
+    <div>
+    <label class="lab" for="sorry_end">Si l'un de vous s'excuse lorsque votre discussion se détériore, la discussion se termine?</label>
+
+  <div class="test">
+    <input type="radio" value=4 for="sorry_end" name="sorry_end" required >
+      <label class="form-control-label" id="no" name="sorry_end" >Jamais</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=3 for="sorry_end" name="sorry_end" required >
+      <label class="form-control-label" id="sm" name="sorry_end">rarement</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=2 for="sorry_end" name="sorry_end" required >
+      <label class="form-control-label" id="sm" name="sorry_end">Parfois</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=1 for="sorry_end" name="sorry_end" required >
+      <label class="form-control-label" id="caec" name="sorry_end" >Frequament</label><br>
+    </div>
+    <div class="test">
+      <input type="radio" value=0 for="sorry_end" name="sorry_end"  required>
+      <label class="form-control-label" id="caec" name="sorry_end" >Toujours</label><br>
+      </div>
+  </div>
+  <div>
+    <label class="lab" for="ignore_difference">pouvez-vous ignorer vos différences, même si les choses deviennent parfois difficiles.?</label>
+  <div class="test">
+      <input type="radio" value=4 for="sorry_end" name="ignore_difference" required >
+        <label class="form-control-label" id="no" name="ignore_difference" >Jamais</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=3 for="sorry_end" name="ignore_difference" required >
+       <label class="form-control-label" id="sm" name="sorry_end">rarement</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=2 for="sorry_end" name="ignore_difference" required >
+        <label class="form-control-label" id="sm" name="ignore_difference">Parfois</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=1 for="sorry_end" name="ignore_difference" required >
+        <label class="form-control-label" id="caec" name="ignore_difference" >Frequament</label><br>
+      </div>
+      <div class="test">
+        <input type="radio" value=0 for="sorry_end" name="ignore_difference"  required>
+        <label class="form-control-label" id="caec" name="ignore_difference" >Toujours</label><br>
+        </div>
+  </div>
+  <div>
+    <label class="lab" for="begin_correct">pouvez-vous reprendre vos discussions avec ton conjoint depuis le début et le corriger?</label>
+    <div class="test">
+    <input type="radio" value=4 for="sorry_end" name="begin_correct" required >
+      <label class="form-control-label" id="no" name="begin_correct" >Jamais</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=3 for="sorry_end" name="begin_correct" required >
+      <label class="form-control-label" id="sm" name="begin_correct">rarement</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=2 for="sorry_end" name="begin_correct" required >
+      <label class="form-control-label" id="sm" name="begin_correct">Parfois</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=1 for="sorry_end" name="begin_correct" required >
+      <label class="form-control-label" id="caec" name="begin_correct" >Frequament</label><br>
+      </div>
+      <div class="test">
+      <input type="radio" value=0 for="sorry_end" name="begin_correct"  required>
+      <label class="form-control-label" id="caec" name="begin_correct" >Toujours</label><br>
+      </div>
+</div>
+<div>
+  <label class="lab" for="stress">connaissez-vous pourquoi  votre conjoint est stressé?</label>
+  <div class="test">
+  <input type="radio" value=4 for="stress" name="stress" required >
+    <label class="form-control-label" id="no" name="stress" >Jamais</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=3 for="stress" name="stress" required >
+    <label class="form-control-label" id="sm" name="stress">rarement</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=2 for="stress" name="stress" required >
+    <label class="form-control-label" id="sm" name="stress">Parfois</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=1 for="stress" name="stress" required >
+    <label class="form-control-label" id="caec" name="stress" >Frequament</label><br>
+    </div>
+    <div class="test">
+    <input type="radio" value=0 for="stress" name="stress"  required>
+    <label class="form-control-label" id="caec" name="stress" >Toujours</label><br>
+    </div>
+</div>
+<div>
+<label class="lab" for="anxious"> Connaissez-vous les angoisses fondamentales de votre conjoint?</label>
+<div class="test">
+<input type="radio" value=4 for="conta" name="anxious" required >
+  <label class="form-control-label" id="no" name="anxious" >Jamais</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=3 for="anxious" name="anxious" required >
+  <label class="form-control-label" id="sm" name="anxious">rarement</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=2 for="anxious" name="anxious" required >
+  <label class="form-control-label" id="sm" name="canxious">Parfois</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=1 for="anxious" name="anxious" required >
+  <label class="form-control-label" id="caec" name="anxious" >Frequament</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=0 for="anxious" name="anxious"  required>
+  <label class="form-control-label" id="caec" name="anxious" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="currentstress">savez-vous quelles sont les sources de stress actuelles de ton conjoint?</label>
+<div class="test">
+<input type="radio" value=4 for="currentstress" name="currentstress" required >
+  <label class="form-control-label" id="no" name="currentstress" >Jamais</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=3 for="currentstress" name="currentstress" required >
+  <label class="form-control-label" id="sm" name="currentstress">rarement</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=2 for="currentstress" name="currentstress" required >
+  <label class="form-control-label" id="sm" name="currentstress">Parfois</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=1 for="currentstress" name="currentstress" required >
+  <label class="form-control-label" id="caec" name="currentstress" >Frequament</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=0 for="currentstress" name="currentstress"  required>
+  <label class="form-control-label" id="caec" name="currentstress" >Toujours</label><br>
+</div>
+</div>
+<div>
+<label class="lab" for="goodtoleavehome">Sentez-vous bien lorsque vous sortez de chez vous ?</label>
+<div class="test">
+<input type="radio" value=4 for="goodtoleavehome" name="goodtoleavehome" required >
+  <label class="form-control-label" id="no" name="goodtoleavehome" >Jamais</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=3 for="goodtoleavehome" name="goodtoleavehome" required >
+  <label class="form-control-label" id="sm" name="goodtoleavehome">rarement</label><br>
+  </div>
+  <div class="test">
+  <input type="radio" value=2 for="goodtoleavehome" name="goodtoleavehome" required >
+  <label class="form-control-label" id="sm" name="goodtoleavehome">Parfois</label><br>
+</div> 
+  <div class="test"> 
+  <input type="radio" value=1 for="goodtoleavehome" name="goodtoleavehome" required >
+  <label class="form-control-label" id="caec" name="goodtoleavehome" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="goodtoleavehome" name="goodtoleavehome"  required>
+  <label class="form-control-label" id="caec" name="goodtoleavehome" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="idntwhatsgoon">Commençonez-vous juste une discussion avant que tu sache ce qui se passe. ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="idntwhatsgoon" name="idntwhatsgoon" required >
+  <label class="form-control-label" id="no" name="idntwhatsgoon" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=3 for="idntwhatsgoon" name="idntwhatsgoon" required >
+  <label class="form-control-label" id="sm" name="idntwhatsgoon">rarement</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=2 for="idntwhatsgoon" name="idntwhatsgoon" required >
+  <label class="form-control-label" id="sm" name="idntwhatsgoon">Parfois</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=1 for="idntwhatsgoon" name="idntwhatsgoon" required >
+  <label class="form-control-label" id="caec" name="idntwhatsgoon" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="idntwhatsgoon" name="idntwhatsgoon"  required>
+  <label class="form-control-label" id="caec" name="idntwhatsgoon" >Toujours</label><br>
+  </div>
+</div>
+<div>
+<label class="lab" for="incompetence">Pensez-vous que votre partenaire est incompétent ?</label>
+<div class="test"> 
+<input type="radio" value=4 for="incompetence" name="incompetence" required >
+  <label class="form-control-label" id="no" name="incompetence" >Jamais</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=3 for="incompetence" name="incompetence" required >
+  <label class="form-control-label" id="sm" name="incompetence">rarement</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=2 for="incompetence" name="incompetence" required >
+  <label class="form-control-label" id="sm" name="incompetence">Parfois</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=1 for="incompetence" name="incompetence" required >
+  <label class="form-control-label" id="caec" name="incompetence" >Frequament</label><br>
+  </div>
+  <div class="test"> 
+  <input type="radio" value=0 for="incompetence" name="incompetence"  required>
+  <label class="form-control-label" id="caec" name="incompetence" >Toujours</label><br>
+  </div>
+</div>
+</div>
+  <div>
+    <button type="submit">Passer au niveau 3</button>
+  </div>
+</form>
+</div>
+
+</body>
